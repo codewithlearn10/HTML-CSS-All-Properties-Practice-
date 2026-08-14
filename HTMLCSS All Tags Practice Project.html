@@ -1,0 +1,368 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML All Tags Practice Project</title>
+    <link rel="stylesheet" href="HTMLCSS All Tags Practice Project.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>HTML All Tags Practice Project</h1>
+        <p>Learning and practicing different HTML5 tags.</p>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#table">Table</a> |
+            <a href="#form">Form</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home</h2>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <p>
+                This is a paragraph. HTML is used to create the structure
+                of a web page.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Text Formatting -->
+        <section id="about">
+            <h2>Text Formatting Tags</h2>
+
+            <p><b>Bold Text</b></p>
+            <p><strong>Strong Text</strong></p>
+            <p><i>Italic Text</i></p>
+            <p><em>Emphasized Text</em></p>
+            <p><u>Underlined Text</u></p>
+            <p><mark>Highlighted Text</mark></p>
+            <p><small>Small Text</small></p>
+            <p><del>Deleted Text</del></p>
+            <p><ins>Inserted Text</ins></p>
+            <p>H<sub>2</sub>O</p>
+            <p>X<sup>2</sup></p>
+
+            <blockquote>
+                HTML is the standard markup language for creating web pages.
+            </blockquote>
+
+            <q>Practice makes perfect.</q>
+
+            <p>
+                <abbr title="HyperText Markup Language">HTML</abbr>
+                is used to create web pages.
+            </p>
+
+            <address>
+                Written by Dipak Kumar<br>
+                India
+            </address>
+        </section>
+
+        <hr>
+
+        <!-- Lists -->
+        <section id="skills">
+            <h2>List Tags</h2>
+
+            <h3>Unordered List</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+            </ol>
+
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- Image -->
+        <section>
+            <h2>Image Tag</h2>
+
+            <img src="https://via.placeholder.com/300"
+                 alt="Sample Image"
+                 width="300">
+        </section>
+
+        <hr>
+
+        <!-- Link -->
+        <section>
+            <h2>Link Tag</h2>
+
+            <a href="https://www.google.com" target="_blank">
+                Visit Google
+            </a>
+        </section>
+
+        <hr>
+
+        <!-- Table -->
+        <section id="table">
+            <h2>HTML Table</h2>
+
+            <table border="1" cellpadding="10">
+                <caption>Student Information</caption>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Dipak</td>
+                        <td>22</td>
+                        <td>Web Development</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rahul</td>
+                        <td>21</td>
+                        <td>Python</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Student Details</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Form -->
+        <section id="form">
+            <h2>HTML Form</h2>
+
+            <form>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br><br>
+
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <label>Skills:</label>
+
+                <input type="checkbox" id="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="js">
+                <label for="js">JavaScript</label>
+
+                <br><br>
+
+                <label for="course">Select Course:</label>
+
+                <select id="course">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                </select>
+
+                <br><br>
+
+                <label for="message">Message:</label><br>
+
+                <textarea id="message"
+                          rows="5"
+                          cols="30"></textarea>
+
+                <br><br>
+
+                <input type="date">
+                <br><br>
+
+                <input type="file">
+                <br><br>
+
+                <input type="number" placeholder="Enter Age">
+                <br><br>
+
+                <input type="color">
+                <br><br>
+
+                <input type="range">
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Audio -->
+        <section>
+            <h2>Audio</h2>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <hr>
+
+        <!-- Video -->
+        <section>
+            <h2>Video</h2>
+
+            <video width="400" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+        <hr>
+
+        <!-- Details -->
+        <section>
+            <h2>Details and Summary</h2>
+
+            <details>
+                <summary>What is HTML?</summary>
+
+                <p>
+                    HTML stands for HyperText Markup Language.
+                    It is used to create the structure of web pages.
+                </p>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- Progress -->
+        <section>
+            <h2>Progress and Meter</h2>
+
+            <label>HTML Progress:</label>
+            <progress value="80" max="100"></progress>
+
+            <br><br>
+
+            <label>Skill Level:</label>
+            <meter value="0.7">70%</meter>
+        </section>
+
+        <hr>
+
+        <!-- Figure -->
+        <section>
+            <h2>Figure</h2>
+
+            <figure>
+                <img src="https://via.placeholder.com/250" 
+                     alt="Example Image"> 
+ 
+                <figcaption> 
+                    Example of HTML figure and figcaption. 
+                </figcaption> 
+            </figure> 
+        </section> 
+ 
+        <hr> 
+ 
+        <!-- Contact --> 
+        <section id="contact"> 
+            <h2>Contact</h2> 
+ 
+            <p>Email: 
+                <a href="mailto:example@gmail.com"> 
+                    example@gmail.com 
+                </a> 
+            </p> 
+ 
+            <p>Phone: 
+                <a href="tel:+911234567890"> 
+                    +91 1234567890 
+                </a> 
+            </p> 
+        </section> 
+ 
+    </main> 
+ 
+    <hr> 
+ 
+    <!-- Footer --> 
+    <footer> 
+        <p> 
+            &copy; 2026 Dipak Kumar. All Rights Reserved. 
+        </p> 
+ 
+        <p> 
+            HTML All Tags Practice Project 
+        </p> 
+    </footer> 
+ 
+</body> 
+ 
+</html> css likho this html
