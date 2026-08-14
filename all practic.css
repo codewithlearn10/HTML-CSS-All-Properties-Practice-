@@ -1,0 +1,610 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   CSS VARIABLES
+========================= */
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --dark-color: #222;
+    --light-color: #f4f4f4;
+    --white-color: #fff;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* NAVIGATION */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #0002;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+
+/* =========================
+   COLORS
+========================= */
+
+.colors {
+    color: white;
+    background-color: #3498db;
+    padding: 30px;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   BOX MODEL
+========================= */
+
+.box {
+    width: 300px;
+    min-height: 180px;
+
+    margin: 20px;
+    padding: 25px;
+
+    border: 5px solid #3498db;
+    border-radius: 15px;
+
+    background-color: lightblue;
+}
+
+
+/* BORDER */
+
+.border-example {
+    padding: 20px;
+
+    border-top: 3px dashed red;
+    border-right: 3px solid green;
+    border-bottom: 3px dotted blue;
+    border-left: 3px double purple;
+}
+
+
+/* =========================
+   WIDTH HEIGHT
+========================= */
+
+.size {
+    width: 80%;
+    max-width: 600px;
+
+    height: 150px;
+
+    padding: 20px;
+
+    background-color: #ddd;
+}
+
+
+/* =========================
+   DISPLAY
+========================= */
+
+.block {
+    display: block;
+    background: lightblue;
+    padding: 10px;
+}
+
+.inline {
+    display: inline;
+    background: lightgreen;
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    background: orange;
+    padding: 15px;
+}
+
+
+/* =========================
+   POSITION
+========================= */
+
+.position-box {
+    position: relative;
+
+    top: 10px;
+    left: 20px;
+
+    width: 200px;
+    padding: 20px;
+
+    background: #3498db;
+    color: white;
+}
+
+
+/* =========================
+   FLEXBOX
+========================= */
+
+.flex-container {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.flex-item {
+    flex: 1;
+
+    min-width: 150px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #3498db;
+    color: white;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.grid-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #2ecc71;
+    color: white;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.background {
+    min-height: 200px;
+
+    padding: 30px;
+
+    color: white;
+
+    background-image:
+        linear-gradient(#0008, #0008),
+        url("https://picsum.photos/800/400");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* GRADIENT */
+
+.gradient {
+    padding: 50px;
+
+    color: white;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00c6ff,
+            #0072ff
+        );
+}
+
+
+/* =========================
+   FONT
+========================= */
+
+.font-example {
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    font-style: italic;
+
+    font-weight: 600;
+
+    font-variant: small-caps;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.text-example {
+    text-align: center;
+
+    text-decoration: underline;
+
+    text-transform: capitalize;
+
+    letter-spacing: 2px;
+
+    word-spacing: 10px;
+
+    line-height: 2;
+}
+
+
+/* =========================
+   SHADOW
+========================= */
+
+.shadow {
+    padding: 30px;
+
+    background: white;
+
+    box-shadow:
+        5px 5px 20px #0005;
+
+    text-shadow:
+        2px 2px 5px #999;
+}
+
+
+/* =========================
+   OVERFLOW
+========================= */
+
+.overflow {
+    width: 300px;
+    height: 100px;
+
+    padding: 15px;
+
+    overflow: auto;
+
+    border: 2px solid #333;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #333;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+th {
+    background: #3498db;
+    color: white;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #3498db;
+    color: white;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #2c3e50;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   TRANSFORM
+========================= */
+
+.transform {
+    width: 200px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: orange;
+
+    transition: 0.5s;
+}
+
+.transform:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+
+/* =========================
+   TRANSITION
+========================= */
+
+.transition {
+    width: 250px;
+
+    padding: 30px;
+
+    background: #2ecc71;
+
+    transition:
+        all 0.5s ease;
+}
+
+.transition:hover {
+    width: 400px;
+
+    background: #3498db;
+
+    color: white;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.animation {
+    width: 150px;
+
+    padding: 30px;
+
+    background: #e74c3c;
+
+    color: white;
+
+    text-align: center;
+
+    animation:
+        moveBox 2s infinite alternate;
+}
+
+@keyframes moveBox {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* =========================
+   FILTER
+========================= */
+
+.filter {
+    width: 250px;
+
+    height: 150px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    background: #3498db;
+
+    color: white;
+
+    filter: grayscale(50%);
+}
+
+
+/* =========================
+   CSS VARIABLE
+========================= */
+
+.variable-box {
+    padding: 30px;
+
+    color: white;
+
+    background-color:
+        var(--primary-color);
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form input {
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 12px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 6px;
+
+    outline: none;
+}
+
+form input:focus {
+    border-color: #3498db;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #222;
+
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .animation {
+        animation: none;
+    }
+}
